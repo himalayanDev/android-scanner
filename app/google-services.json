@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "560260209927",
+    "firebase_url": "https://myfav-rider-app.firebaseio.com",
+    "project_id": "myfav-rider-app",
+    "storage_bucket": "myfav-rider-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560260209927:android:a18fd084cd03778ad4b9a2",
+        "android_client_info": {
+          "package_name": "in.myfav.rider"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "560260209927-22fb6mjrbjlrp50igqkcv023dut3k9vi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5RwCk7RFYTw5rX8YRW2LKq0cnCd_4AkU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "560260209927-22fb6mjrbjlrp50igqkcv023dut3k9vi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

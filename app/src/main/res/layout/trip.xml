@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/page_vertical_margin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/surface"
+        style="@style/FormContainer.Normal"
+        android:orientation="vertical"
+        android:background="@drawable/surface_white_sheet">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/summary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tripId"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="ID: TRP0090001"
+                style="@style/FormField.Label.Wrap"
+                />
+            <TextView
+                android:id="@+id/deliveryCount"
+                app:layout_constraintTop_toBottomOf="@+id/tripId"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="Delivered: 0/12"
+                style="@style/FormField.Label.Wrap"
+                />
+
+            <TextView
+                android:id="@+id/time"
+                app:layout_constraintTop_toTopOf="@+id/tripId"
+                app:layout_constraintBottom_toBottomOf="@+id/deliveryCount"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintVertical_bias=".5"
+                android:text="Start Time: 14:30 "
+                style="@style/FormField.Label.Wrap"
+                />
+
+            <View
+                app:layout_constraintTop_toBottomOf="@+id/deliveryCount"
+                app:layout_constraintLeft_toLeftOf="parent"
+               style="@style/Container.FullWidth"
+                android:layout_marginTop="4dp"
+                android:layout_height="2dp"
+                android:background="@color/grey_300"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <Space
+            style="@style/Container.FullWidth"
+            android:layout_height="@dimen/margin_small" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/selectionGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

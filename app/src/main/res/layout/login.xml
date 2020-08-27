@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Page.FullWidth"
+    android:background="@drawable/splash">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey_trans"/>
+
+    <RelativeLayout style="@style/Page.FullWidth">
+
+        <Space
+            android:id="@+id/space0"
+            style="@style/Container.FullWidth"
+            android:layout_height="144dp" />
+
+        <ImageView
+            android:id="@+id/logo"
+            style="@style/ImageHolder.CenterHorizontal"
+            android:layout_below="@+id/space0" />
+
+        <Space
+            android:id="@+id/space1"
+            style="@style/Container.FullWidth"
+            android:layout_height="24dp"
+            android:layout_below="@+id/logo" />
+
+        <LinearLayout
+            android:id="@+id/formContainer"
+            style="@style/FormContainer.Small"
+            android:layout_below="@+id/space1">
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_small" />
+
+            <EditText
+                android:id="@+id/username"
+                style="@style/FormField.UserName"
+                android:hint="Username"
+                android:text="ssf_developer" />
+
+            <TextView
+                android:id="@+id/usernameErr"
+                style="@style/FormField.Error" />
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_small" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/FormField.Password.Centered"
+                android:hint="Password"
+                android:text="Changeme11!@" />
+
+            <TextView
+                android:id="@+id/passwordErr"
+                style="@style/FormField.Error" />
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_small" />
+
+            <android.widget.Button
+                android:id="@+id/login"
+                style="@style/Button.FullWidth"
+                android:text="Login" />
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_small" />
+
+            <Space
+                style="@style/Container.FullWidth"
+                android:layout_height="@dimen/margin_small" />
+
+            <TextView
+                android:id="@+id/forgotPassword"
+                style="@style/FormField.Alert"
+                android:layout_gravity="right"
+                android:text="" />
+        </LinearLayout>
+
+        <Space
+            android:id="@+id/space3"
+            style="@style/Container.FullWidth"
+            android:layout_height="@dimen/margin_large"
+            android:layout_below="@+id/formContainer" />
+
+        <ImageView
+            style="@style/ImageHolder.CenterHorizontal"
+            android:layout_below="@+id/space3" />
+
+    </RelativeLayout>
+</FrameLayout>
+
+

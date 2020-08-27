@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Container.WrapContent">
+
+    <RelativeLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/primary"
+        style="@style/Container.FullWidth"
+        android:layout_height="@dimen/toolbar_height">
+        <TextView
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_centerVertical="true"
+            style="@style/Header.ToolBar"
+            android:text="Packet Details"/>
+    </RelativeLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/formContainer"
+        style="@style/FormContainer.Normal"
+        android:layout_margin="0dp">
+
+        <include
+            android:id="@+id/itemTrip"
+            layout="@layout/item_trip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/itemTrip"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:id="@+id/customerLabel"
+            style="@style/Label.Title"
+            android:gravity="center"
+            android:text="Customer Details" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/customerLabel"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:id="@+id/customerName"
+            style="@style/Label"
+            android:gravity="center"
+            android:text="Customer Details" />
+        <TextView
+            app:layout_constraintTop_toBottomOf="@+id/customerName"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:id="@+id/customerNumber"
+            style="@style/Label"
+            android:gravity="center"
+            android:text="Customer Details" />
+        <Space
+            android:id="@+id/space"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customerNumber"
+            style="@style/Container.FullWidth"
+            android:layout_height="@dimen/margin_small" />
+
+        <android.widget.Button
+            app:layout_constraintTop_toBottomOf="@+id/space"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="15dp"
+            android:id="@+id/deliver"
+            style="@style/Button.Small"
+            android:text="Deliver" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+
+
